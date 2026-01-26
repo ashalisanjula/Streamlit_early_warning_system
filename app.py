@@ -47,7 +47,7 @@ label = user.get("label", "N/A")
 temporal_feat = torch.zeros(4)
 
 st.write("Posts:", embeddings.shape[0])
-st.write("Ground truth label:", label)
+#st.write("Ground truth label:", label)
 
 # -----------------------------
 # EARLY WARNING SIMULATION
@@ -77,7 +77,7 @@ if st.button("Run Early-Warning Simulation"):
         st.error("⚠️ EARLY WARNING ISSUED")
         st.write(f"Window: {alert['window_index']}")
         st.write(f"Post number: {post_id}")
-        st.write(f"Timestamp: {ts}")
+        #st.write(f"Timestamp: {ts}")
         st.write(f"Risk score: {alert['risk']:.4f}")
     else:
         st.success("✅ No early warning detected.")
