@@ -83,3 +83,4 @@ if st.button("Run Early-Warning Simulation"):
         st.success("✅ No early warning detected.")
 
 
+st.warning("⚠️ This system is for research and educational purposes only. It is not a medical diagnostic tool.")
